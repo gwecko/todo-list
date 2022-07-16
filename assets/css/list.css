@@ -1,0 +1,102 @@
+body{
+    background: url(../background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+h1{
+    background: rgb(97, 126, 146);
+    color: rgb(255, 255, 255);
+    margin: 0; /* Keeps text input close. */
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.fa-pen{
+    float: right;
+    font-size: 20px;
+    padding: 8px 0;
+}
+
+input{
+    font-size: 20px;
+    width: 100%;
+    padding: 10px 10px 10px 20px;
+    margin: 0 auto;
+    box-sizing: border-box; /* Keeps the input area from spilling out */
+    /* background-color: rgb(165, 182, 201); */
+    background-color: aliceblue;
+    outline: none;
+    border: none;
+}
+
+input:focus{
+    border-left: 6px dotted rgb(97, 126, 146);
+}
+
+::placeholder{
+    color: rgba(97, 126, 146, 0.7);
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    height: 0;
+}
+
+li{
+    height: 40px;
+    line-height: 40px; /* Way of centering the text */
+    background-color: rgb(165, 182, 201);
+}
+
+li:nth-child(2n){
+    background: aliceblue;
+}
+
+span{
+    background: rgb(97, 126, 146);
+    height: 40px;
+    margin-right: 10px;
+    text-align: center;
+    width: 0;
+    display: inline-block;
+    color: transparent;
+}
+
+/* when we hover over an <li>, we want to select the <span> to perform on. */
+li:hover span{
+    color: black;
+    width: 40px;
+    transition: 250ms ease-in;
+}
+
+
+#container{
+    margin: 80px auto;
+    padding: 0;
+    width: 500px;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    /* background-color: rgb(165, 182, 201); */
+    background-color: white;
+}
+
+.done{
+    color: rgba(0,0,0,.3);
+    text-decoration: line-through;
+}
+
+.input-hide{
+    opacity: 0;
+    height: 0;
+    padding: 0;
+    line-height: 0;
+    display: flex;
+    transition: 300ms;
+}
