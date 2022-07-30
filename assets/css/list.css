@@ -4,6 +4,10 @@ body{
     background-attachment: fixed;
 
     font-family: 'Nunito Sans', sans-serif;
+
+    @media screen and (max-width: 480px) {
+        width: 90%;
+    }
 }
 
 h1{

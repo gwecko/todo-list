@@ -33,6 +33,5 @@ $("input[type='text']").keypress(function(event){
 
 //Hides text input using CSS, clears after hiding.
 $(".fa-pen").click(function(){
-    // $("input[type='text']").toggleClass("input-hide")
     $("input[type='text']").toggleClass("input-hide");
 })
