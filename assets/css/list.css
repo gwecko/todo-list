@@ -4,10 +4,6 @@ body{
     background-attachment: fixed;
 
     font-family: 'Nunito Sans', sans-serif;
-
-    @media screen and (max-width: 480px) {
-        width: 90%;
-    }
 }
 
 h1{
@@ -85,10 +81,13 @@ li:hover span{
 #container{
     margin: 80px auto;
     padding: 0;
-    width: 500px;
+    width: 80%;
+    max-width: 700px;
+    
     box-shadow: 0 0 10px rgba(0,0,0,.5);
     /* background-color: rgb(165, 182, 201); */
     background-color: white;
+    
 }
 
 .done{
